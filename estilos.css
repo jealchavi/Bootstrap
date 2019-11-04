@@ -1,0 +1,117 @@
+:root{
+    --principal: #333;
+    --secundario:#fe4918;
+    --terciario:rgb(217,219,221);
+}
+
+body{
+    font-family: bahnschrift;
+    font-weight: 300;
+    background-color: rgb(242,244,246);
+    overflow-x: hidden;
+    
+}
+
+.texto-oscuro{
+    color: var(--principal);
+}
+
+
+.texto-secundario{
+    color: var(--secundario);
+}
+
+.bg-principal{
+    background-color: var(--principal);
+}
+
+.bg-secundario{
+    background-color: var(--secundario);
+}
+
+.fondo{
+    background-image: url(../img/fondo.jpg);
+    height: 100vh;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+    padding: 0;
+}
+
+.fondo2{
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 100vw;
+}
+
+.img-back, .img-front{
+    max-width: 100%;
+}
+
+@media only screen and (min-width:768px){
+    .img-back, .img-front{
+        width: 800px;
+        height: 200px;
+    }   
+}
+
+.barra{
+    background: var(--principal) !important;
+    padding:0;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+
+
+.barra ul a:hover{
+    color: rgba(100,100, 100, 0.9) !important;
+}
+
+@media only screen and (max-width:768px){
+    .menu{
+        width: 70% !important; 
+    }
+}
+
+section>h3::after{
+    content: '';
+    background-image: url("../img/separador.png");
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 100px;
+}
+
+
+.mapa{
+    height: 400px;    
+}
+
+
+footer{
+    height: 50px;
+}
+
+
+
+/* EStilos servicios */
+
+
+
+
+/* EStilos nosotros--------------- */
+
+.somos{
+    border: 2px solid var(--terciario);
+}
+
+@media only screen and (max-width:480px){
+    .somos{
+        padding: 0;
+        margin: 0 !important;
+        width: 100%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+}
